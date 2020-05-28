@@ -1,3 +1,4 @@
+const resolve = dir => require('path').join(__dirname, dir)
 module.exports = {
     pages: {
         index: {
@@ -20,7 +21,13 @@ module.exports = {
         // 输出文件名会被推导为 `subpage.html`。
         // subpage: 'src/subpage/main.js'
     },
-    lintOnSave:false,
+    lintOnSave: false,
+    resolve: {
+        alias: {
+            '@': resolve('./src'),
+            'components': resolve('src/components')
+        }
+    },
     devServer: {
         open: true,
         proxy: {
