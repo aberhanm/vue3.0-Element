@@ -22,12 +22,12 @@ module.exports = {
         // subpage: 'src/subpage/main.js'
     },
     lintOnSave: false,
-    resolve: {
-        alias: {
-            '@': resolve('./src'),
-            'components': resolve('src/components')
-        }
-    },
+    // resolve: {
+    //     alias: {
+    //         '@': resolve('./src'),
+    //         'components': resolve('src/components')
+    //     }
+    // },
     devServer: {
         open: true,
         proxy: {
